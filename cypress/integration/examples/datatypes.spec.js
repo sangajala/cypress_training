@@ -1,4 +1,6 @@
 /// <reference types="cypress" />
+var x=true;
+const text = "Sriram";
 
 context('Practice Javascript Programmes', () => {
   
@@ -28,7 +30,22 @@ context('Practice Javascript Programmes', () => {
     var d;
     d = new Array();
     console.log(typeof(d))
+    add()
   })
 
+  it('String Quotes',()=>{
+    
+     text = "Sriram1";
+    let text2 = 'Girish';
+    let text3 = `Venky ${(false)?text:text2}`;
+    let text4 = `Venky ${add()}`;
+    console.log(text);
+    console.log(text2);
+    console.log(text3);
+    console.log(text4);
+  })
+  function add(){
+    return 'jaya';
+  }
 
 })
